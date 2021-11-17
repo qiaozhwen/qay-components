@@ -2,6 +2,6 @@ import React from 'react';
 const transFormParam = (filterJson)=>{
     
 }
-const CreateFilter =()=>{
-
-}
+const CreateFilter =(param)=>{
+    console.log(param)
+} 
