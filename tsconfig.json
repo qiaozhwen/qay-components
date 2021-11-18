@@ -1,0 +1,14 @@
+{
+  "compilerOptions": {
+    "sourceMap": true,
+    "moduleResolution": "node",
+    "target": "es2015",
+    "lib": ["es6", "dom", "es2017"],
+    "jsx": "react",
+    "allowSyntheticDefaultImports": true,
+    "experimentalDecorators": true,
+    "baseUrl": "."
+  },
+  "exclude": ["__tests__"],
+  "include": ["src/**/*", "node_modules/apollo-ui/**/*", "typings/*"]
+}

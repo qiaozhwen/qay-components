@@ -9,7 +9,8 @@ module.exports ={
     },
     module: {
         rules: [
-            { test: /\.tsx$/, use: 'babel-loader' },
+            { test: /\.js?$/, use: 'babel-loader' },
+            { test: /\.tsx?$/, loader: "ts-loader" },
             {
                 test: /\.css$/i,
                 use: ["style-loader", "css-loader"],
@@ -18,12 +19,15 @@ module.exports ={
     },
     devServer: {
         compress: true,
-        port: 9000,
+        port: 9999,
     },
     plugins: [
         new HtmlWebpackPlugin({
             title: "qz html",
             template: "./index.html"
         })
-    ]
+    ],
+    resolve: {
+        extensions: ['.js','.jsx','.ts','.tsx']
+    }
 }
