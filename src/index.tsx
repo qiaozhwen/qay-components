@@ -3,7 +3,11 @@ import { Button } from 'antd';
 const transFormParam = (filterJson)=>{
     
 }
-const CreateFilter =(param)=>{
+interface cmpType {
+    type: 'select' | 'input' | 'radio' | 'checkBox'
+    dataSource: any
+}
+const CreateFilter =(param: cmpType[])=>{
     console.log(param);
     return (
         <div>
