@@ -1,6 +1,6 @@
 import React from 'react'
 import ReactDom from 'react-dom'
-import {CreateFilter} from '../src/index'
+import {CreateFilter} from '../packages/index'
 const App = ()=>{
     return (
         <div style={{padding: 10, width: 200}}>

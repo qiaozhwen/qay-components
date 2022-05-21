@@ -10,5 +10,6 @@
     "baseUrl": "."
   },
   "exclude": ["__tests__"],
-  "include": ["src/**/*", "node_modules/apollo-ui/**/*", "typings/*"]
+  "include": [
+    "packages/**/*", "node_modules/apollo-ui/**/*", "typings/*"]
 }
