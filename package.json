@@ -1,13 +1,13 @@
 {
   "name": "qay-components",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "",
   "main": "dist/index.js",
   "module": "dist/index.js",
   "scripts": {
     "preview": "start-storybook -p 8828",
     "build:preview": "build-storybook -c .storybook -o docs",
-    "pbs":"rollup --config rollup.config.js"
+    "pbs": "rollup --config rollup.config.js"
   },
   "repository": {
     "type": "git",
