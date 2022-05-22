@@ -7,7 +7,8 @@
   "scripts": {
     "preview": "start-storybook -p 8828",
     "build:preview": "build-storybook -c .storybook -o docs",
-    "pbs": "rollup --config rollup.config.js"
+    "build": "rollup --config rollup.config.js",
+    "prod": "npm run build && npm version patch && npm publish && git push"
   },
   "repository": {
     "type": "git",
