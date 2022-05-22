@@ -16,7 +16,8 @@ const FormForwardRef = React.forwardRef<any, FormProps>(FormCmp) as <Values = an
 } & {
   ref?: React.Ref<FormInstance<Values>> | undefined;
 }) => React.ReactElement
-const Form = FormForwardRef as FormInterface
+let Form: FormInterface;
+Form = FormForwardRef as FormInterface;
 
 
 Form.useForm = OriginalForm.useForm
