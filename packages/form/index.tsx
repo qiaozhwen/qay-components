@@ -33,7 +33,6 @@ Form.Provider = OriginalForm.Provider
 
 var a = {
   a: '123',
-  b: {},
   c: '123',
   d: { v: '456', o: '999' }
 }

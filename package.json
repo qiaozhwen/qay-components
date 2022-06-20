@@ -10,7 +10,6 @@
     "build": "rollup --config rollup.config.js",
     "wp": "webpack --config webpack.config.js",
     "prod": "npm run build && npm version patch && npm publish && git push",
-    "precommit": "pretty-quick --staged",
     "prepare": "husky install"
   },
   "repository": {
