@@ -33,10 +33,8 @@ Form.Provider = OriginalForm.Provider
 
 var a = {
   a: '123',
-  c: '123',
-  d:
-    { v: '456', o: '999' }
+  c: '1234',
+  d: { v: '456', o: '999' }
 }
-console.log
-('123')
+console.log('123')
 export { Form }
