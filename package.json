@@ -71,6 +71,6 @@
     "webpack-dev-server": "^4.5.0"
   },
   "lint-staged": {
-    "**/*": "prettier --write --ignore-unknown"
+    "*.{js,ts,jsx,tsx}": ["prettier --write --ignore-unknown","eslint --ext"]
   }
 }
