@@ -36,5 +36,9 @@ var a = {
   c: '1234',
   d: { v: '456', o: '999' }
 }
+switch (a) {
+  case a:
+    break
+}
 console.log('123')
 export { Form }
