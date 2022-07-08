@@ -10,7 +10,8 @@
     "build": "rollup --config rollup.config.js",
     "wp": "webpack --config webpack.config.js",
     "prod": "npm run build && npm version patch && npm publish && git push",
-    "prepare": "husky install"
+    "prepare": "husky install",
+    "precheck": " eslint --ext .tsx,.ts --ignore-path .gitignore ."
   },
   "repository": {
     "type": "git",
@@ -71,6 +72,6 @@
     "webpack-dev-server": "^4.5.0"
   },
   "lint-staged": {
-    "*.{js,ts,jsx,tsx}": ["prettier --write --ignore-unknown","eslint --ext"]
+    "*.{js,ts,jsx,tsx}": ["prettier --write --ignore-unknown"]
   }
 }

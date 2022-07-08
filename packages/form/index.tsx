@@ -31,14 +31,4 @@ Form.List = OriginalForm.List
 Form.ErrorList = OriginalForm.ErrorList
 Form.Provider = OriginalForm.Provider
 
-var a = {
-  a: '123',
-  c: '1234',
-  d: { v: '411526', o: '999' }
-}
-switch (a) {
-  case a:
-    break
-}
-console.log('123')
 export { Form }
