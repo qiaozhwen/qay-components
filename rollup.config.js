@@ -8,6 +8,8 @@ import json from "@rollup/plugin-json";
 const { babel } = require("@rollup/plugin-babel");
 const packageJson = require("./package.json");
 const less = require("less");
+const path = require('path')
+const tsconfig = require('./tsconfig.json')
 
 const isProd = process.env.NODE_ENV === "production";
 
@@ -50,15 +52,17 @@ export default {
   input: "packages/index.ts",
   output: [
     {
-      file: packageJson.module,
-      format: "es"
+      // file: packageJson.module,
+      dir:path.resolve(__dirname, 'dist'),
+      format: "esm"
     }
   ],
+  preserveModules: true,
   plugins: [
     peerDepsExternal({ includeDependencies: !isProd }),
     resolve(),
     commonjs({ sourceMap: !isProd }),
-    typescript({ useTsconfigDeclarationDir: true }),
+    typescript(tsconfig.compilerOptions ),
     postcss({
       extract: true,
       process: processLess
@@ -66,4 +70,5 @@ export default {
     babel(babelOptions),
     json()
   ],
+  external: ['antd','tslib']
 };
